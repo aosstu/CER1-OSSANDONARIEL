@@ -5,12 +5,19 @@ h1 {
     font-weight: lighter;
     text-align: left;
     float:left;
-    padding-right: 30%;
+    padding-right: 10vw;
+    padding-top: 1vh;
+    margin-bottom: 0%;
 }
 h2{
     font-weight: bold;
     font-size: 10px;
     font-family: Cambria;
+}
+
+.ps-lg-3 {
+    
+    text-align: left;
 }
 
 body{
@@ -84,4 +91,12 @@ article footer{
 #botonera{
     font-family:Tahoma;
     font-weight: lighter;
+}
+
+.card{
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+.navbar-brand{
+    font-size: x-large;
 }
