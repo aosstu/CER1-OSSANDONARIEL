@@ -51,6 +51,7 @@
         <section class="seccion row d-flex align-content-center justify-content-center">
             <article class="col-12 col-lg-10 col-sm-8">
                 <div class="card h-40  shadow-sm">
+                    <div id="liveAlertPlaceholder"></div>
 
                     <div class="dropdown p-2 " id="botonera">
                     <h1>Titulo del primer articulo</h1>
@@ -59,9 +60,10 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Launch demo modal
+                                Ver Imágenes
                               </button></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -98,7 +100,7 @@
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                  <button type="button" class="btn btn-primary">Descargar</button>
                                 </div>
                               </div>
                             </div>
@@ -113,6 +115,7 @@
                         
                         <time datetime="12-10-2018">Publicado el 12-10-2018</time>
                         <footer>
+                            <button type="button" class="btn btn-outline-primary">Volver Arriba</button>
                             <p>Comentarios (10)</p>
                         </footer>
                     </div>
@@ -325,7 +328,28 @@
     </footer>
 </body>
 </html>
+<script>
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('Nice, you triggered this alert message!', 'success')
+  })
+}
+</script>
 <!--cosas que poner:
-    boton upvote, sonidos de cuevas
+    boton upvote (en todos), sonidos de cuevas
 pagina de comentarios sobre un post-->
