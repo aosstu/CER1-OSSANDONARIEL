@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/estilos.css">
-    <title>Blog</title>
+    <title>Principal - Foro de Cuevas</title>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <a name="inicio"></a>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/html/index.html">Blog de Cuevas</a>
+          <a class="navbar-brand" href="/html/index.html">Foro de Cuevas</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,8 +31,8 @@
             </ul>
             <div class="btn-group h-25 w-30 p-3 pt-1" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-primary">Realizar Post</button>
-                <button type="button" class="btn btn-primary">Perfil</button>
-                <button type="button" class="btn btn-primary">Cerrar Sesión</button>
+                <button type="button" class="btn btn-primary" disabled>Perfil</button>
+                <button type="button" class="btn btn-primary">Iniciar Sesión</button>
               </div>
             <nav aria-label="...">
                 <ul class="pagination">
@@ -84,13 +84,16 @@
                                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
-                                            <img src="/img/borneo cave1.jpg" class="d-block w-100" alt="...">
+                                            <img src="/img/cave1.jpg" class="d-block w-100" alt="...">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src="/img/borneo cave2.jpg" class="d-block w-100" alt="...">
+                                            <img src="/img/cave2.jpg" class="d-block w-100" alt="...">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src="..." class="d-block w-100" alt="...">
+                                            <img src="/img/cave3.jpg" class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="/img/cave4.jpg" class="d-block w-100" alt="...">
                                           </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -183,7 +186,7 @@
                            Herramientas
                         </button>
                         <ul class="dropdown-menu">
-                            <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModala1">
                                 Ver Imagenes
                               </button></li>
                             <li><button type="button" class="btn btn-primary" id="liveAlertBtn" disabled>Realizar UpVote</button></li>
@@ -192,32 +195,32 @@
                               </button>
                               </li>
                         </ul>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModala1" tabindex="-1" aria-labelledby="exampleModalLabela1" aria-hidden="true">
                             <div class="modal-dialog">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <h5 class="modal-title" id="exampleModalLabela1">Modal title</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                   
-                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div id="carouselExampleControlsa1" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
-                                            <img src="..." class="d-block w-100" alt="...">
+                                            <img src="/img/glowworm cave.jpg" class="d-block w-100" alt="...">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src="..." class="d-block w-100" alt="...">
+                                            <img src="/img/glowworm cave2.jpg" class="d-block w-100" alt="...">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src="..." class="d-block w-100" alt="...">
+                                            <img src="/img/glowworm cave3.jpg" class="d-block w-100" alt="...">
                                           </div>
                                         </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsa1" data-bs-slide="prev">
                                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                           <span class="visually-hidden">Previous</span>
                                         </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsa1" data-bs-slide="next">
                                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                           <span class="visually-hidden">Next</span>
                                         </button>
@@ -271,7 +274,7 @@
                             Herramientas
                         </button>
                         <ul class="dropdown-menu">
-                            <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModala2">
                                 Ver Imágenes
                               </button></li>
                             <li><button type="button" class="btn btn-primary" id="liveAlertBtn" disabled>Realizar UpVote</button></li>
@@ -279,32 +282,29 @@
                                 Denunciar
                               </button></li>
                         </ul>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModala2" tabindex="-1" aria-labelledby="exampleModalLabela2" aria-hidden="true">
                             <div class="modal-dialog">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <h5 class="modal-title" id="exampleModalLabela2">Modal title</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                   
-                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div id="carouselExampleControlsa2" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
-                                            <img src="..." class="d-block w-100" alt="...">
+                                            <img src="/img/reed flute cave1.jpg" class="d-block w-100" alt="...">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src="..." class="d-block w-100" alt="...">
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img src="..." class="d-block w-100" alt="...">
+                                            <img src="/img/reed flute cave2.jpg" class="d-block w-100" alt="...">
                                           </div>
                                         </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsa2" data-bs-slide="prev">
                                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                           <span class="visually-hidden">Previous</span>
                                         </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsa2" data-bs-slide="next">
                                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                           <span class="visually-hidden">Next</span>
                                         </button>
@@ -358,7 +358,7 @@
                             Herramientas
                         </button>
                         <ul class="dropdown-menu">
-                            <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModala3">
                                 Ver Imágenes
                               </button></li>
                             <li><button type="button" class="btn btn-primary" id="liveAlertBtn" disabled>Realizar UpVote</button></li>
@@ -366,32 +366,29 @@
                                 Denunciar
                               </button></li>
                         </ul>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModala3" tabindex="-1" aria-labelledby="exampleModalLabela3" aria-hidden="true">
                             <div class="modal-dialog">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <h5 class="modal-title" id="exampleModalLabela3">Modal title</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                   
-                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div id="carouselExampleControlsa3" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
-                                            <img src="/img/cave1.jpg" class="d-block w-100" alt="...">
+                                            <img src="/img/romania cave.jpg" class="d-block w-100" alt="...">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src="..." class="d-block w-100" alt="...">
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img src="..." class="d-block w-100" alt="...">
+                                            <img src="/img/romania cave 2.jpg" class="d-block w-100" alt="...">
                                           </div>
                                         </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsa3" data-bs-slide="prev">
                                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                           <span class="visually-hidden">Previous</span>
                                         </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsa3" data-bs-slide="next">
                                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                           <span class="visually-hidden">Next</span>
                                         </button>
@@ -446,7 +443,7 @@
         </aside>
     </div>
     <footer id="pie">
-        yo
+        Ariel Ossandón paralelo 300
     </footer>
 </body>
 </html>
@@ -486,5 +483,7 @@ function alerta(nliveAlertPlaceholder,nliveAlertBtn){
 
 </script>
 <!--cosas que poner:
- 
-pagina de comentarios sobre un post-->
+    revisar titulos de modal
+    hacer el footer
+    subir imagenes
+-->

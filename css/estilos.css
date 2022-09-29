@@ -64,7 +64,7 @@ article{
     
 }
 time{
-    background: #F99999;
+    background: #69a2d1;
 }
 article footer{
     text-align: right;
@@ -81,11 +81,12 @@ article footer{
     float: left;
     margin: 20px 0;
 }
-.pie{
-    clear: both;
-    padding: 20px;
+#pie{
+    margin-top: 20%;
+    padding: 3vh;
     background: #2d3436;
-    color: #FFFFFF;
+    color: whitesmoke;
+    display: block;
 }
 
 #botonera{
