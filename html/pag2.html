@@ -20,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="/html/index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.youtube.com/c/CalvinHikes" target="_blank">Videos del Admin</a>
@@ -36,23 +36,23 @@
               </div>
             <nav aria-label="...">
                 <ul class="pagination">
+                  <li class="page-item" >
+                    <a class="page-link" href="/html/index.html">Anterior</a>
+                  </li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="/html/index.html">1</a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" >2</a></li>
+                 
                   <li class="page-item disabled">
-                    <span class="page-link">Anterior</span>
-                  </li>
-                  <li class="page-item active" aria-current="page">
-                    <span class="page-link">1</span>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="/html/pag2.html">2</a></li>
-            
-                  <li class="page-item">
-                    <a class="page-link" href="/html/pag2.html">Siguente</a>
+                    <a class="page-link" href="#">Siguente</a>
                   </li>
                 </ul>
               </nav>
           </div>
         </div>
       </nav>
-    <main class="container d-flex align-items-center justify-content-center">
+      <main class="container d-flex align-items-center justify-content-center">
         <section class="seccion row d-flex align-content-center justify-content-center">
             <article class="col-12 col-lg-10 col-sm-8">
                 <div class="card h-40  shadow-sm">
@@ -129,7 +129,7 @@
                             </div>
                           </div>
                           <div class="ps-lg-3 ">
-                              <a href="/html/perfil.html"><h6 class="m-0 h6 ">Ariel Ossandon</h6></a>
+                              <a href="#"><h6 class="m-0 h6 ">Nombre Apellido</h6></a>
                           </div>
                     </div>
                     
@@ -430,7 +430,7 @@
                         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam asperiores quo at dolor veritatis recusandae maxime voluptatibus. Unde vel itaque quam quos, natus laborum labore similique tenetur nobis, necessitatibus ut.</p>
                         <time datetime="12-10-2018">Publicado el 12-10-2018</time>
                         <footer>
-                            <a href="#inicio"> <button id="botonVolver" type="button" class="btn btn-outline-primary"  >Volver Arriba  </button></a> 
+                            <a href="#inicio"> <button id="botonVolver" type="button" class="btn btn-outline-primary"  >Volver Arriba  </button></a>
                             <a class="btn btn-primary" >
                                 Comentarios (0)
                               </a>
@@ -476,7 +476,7 @@ function alerta(nliveAlertPlaceholder,nliveAlertBtn){
     const alertTrigger = document.getElementById(nliveAlertBtn)
     if (alertTrigger) {
     alertTrigger.addEventListener('click', () => {
-        alert('Estamos contentos de mostrar contenido que es de tu agrado!', 'success')
+        alert('Nice, you triggered this alert message!', 'success')
     })
     }
 
@@ -486,5 +486,5 @@ function alerta(nliveAlertPlaceholder,nliveAlertBtn){
 
 </script>
 <!--cosas que poner:
- 
+    boton upvote (en todos), sonidos de cuevas
 pagina de comentarios sobre un post-->

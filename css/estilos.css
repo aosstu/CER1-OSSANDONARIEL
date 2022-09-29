@@ -100,3 +100,16 @@ article footer{
 .navbar-brand{
     font-size: x-large;
 }
+
+#botonVolver{
+    float: left;
+}
+
+#botonSolicitud{
+    float: left;
+}
+
+#soliOkButton{
+    padding-right: 5vw;
+}
+
